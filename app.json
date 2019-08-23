@@ -1,4 +1,7 @@
 {
   "name": "udeep",
-  "repository": "https://github.com/jcapasix/udeep.git"
+  "repository": "https://github.com/jcapasix/udeep.git",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
