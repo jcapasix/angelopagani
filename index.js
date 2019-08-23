@@ -6,7 +6,7 @@ var json = {
     "apps": [],
     "details": [
       {
-        "appID": "778N4TU227.com.everis.miclaroApp",
+        "appID": "778N4TU227.io.github.jcapasix.udeep",
         "paths": [ "*" ]
       }
     ]
