@@ -1,0 +1,19 @@
+{
+  "name": "udeep",
+  "version": "1.0.0",
+  "description": "apple-app-site-association",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcapasix/udeep.git"
+  },
+  "author": "jcapasix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcapasix/udeep/issues"
+  },
+  "homepage": "https://github.com/jcapasix/udeep#readme"
+}
