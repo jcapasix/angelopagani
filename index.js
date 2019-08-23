@@ -1,4 +1,6 @@
-var http = require('http');
+var express = require('express');
+var app = express();
+
 var json = {
   "applinks": {
     "apps": [],
@@ -10,8 +12,18 @@ var json = {
     ]
   }
 }
-var port = process.env.PORT || 3000;
-http.createServer(function (req, res) {
+
+app.get('/', function (req, res) {
+  res.send('udeep: Universal Links');
+});
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
+
+// POST method route
+app.get('/apple-app-site-association', function (req, res) {
   res.writeHead(200, {'Content-Type': 'application/json'});
   res.end(JSON.stringify(json));
-}).listen(port);
+  //res.send('POST request to the homepage');
+});
