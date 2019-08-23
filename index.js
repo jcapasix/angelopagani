@@ -21,8 +21,8 @@ app.listen(5000, function () {
   console.log('Example app listening on port 5000!');
 });
 
-app.get('/apple-app-site-association', function (req, res) {
-  res.writeHead(200, {'Content-Type': 'application/json'});
-  res.end(JSON.stringify(json));
-  //res.send('POST request to the homepage');
-});
+// app.get('/apple-app-site-association', function (req, res) {
+//   res.writeHead(200, {'Content-Type': 'application/json'});
+//   res.end(JSON.stringify(json));
+//   //res.send('POST request to the homepage');
+// });
