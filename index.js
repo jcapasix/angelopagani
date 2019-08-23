@@ -6,8 +6,12 @@ var json = {
     "apps": [],
     "details": [
       {
+        "appID": "778N4TU227.com.everis.miclaroApp",
+        "paths": [ "/claro/*" ]
+      },
+      {
         "appID": "778N4TU227.io.github.jcapasix.udeep",
-        "paths": [ "*" ]
+        "paths": [ "/udeep/*" ]
       }
     ]
   }
@@ -17,7 +21,7 @@ app.get('/', function (req, res) {
   res.send('udeep: Universal Links');
 });
 
-app.get('/apple-app-site-association', function (req, res) {
+app.get('/.well-known/apple-app-site-association', function (req, res) {
   res.writeHead(200, {'Content-Type': 'application/json'});
   res.end(JSON.stringify(json));
   //res.send('POST request to the homepage');
