@@ -17,8 +17,13 @@ var json = {
   }
 }
 
+var http = require('http'), fs = require('fs');
+
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', function (req, res) {
-  res.send('udeep: Universal Links');
+  // res.send('udeep: Universal Links');
+  res.sendFile('views/landing.html', {root: __dirname })
 });
 
 app.get('/.well-known/apple-app-site-association', function (req, res) {
@@ -28,7 +33,7 @@ app.get('/.well-known/apple-app-site-association', function (req, res) {
 });
 
 app.listen(process.env.PORT || 3000, function () {
-  console.log('Example app listening on port 5000!');
+  console.log('Example app listening on port 3000!');
 });
 
 
