@@ -1,6 +1,6 @@
 {
-  "name": "udeep",
-  "repository": "https://github.com/jcapasix/udeep.git",
+  "name": "angelopagani",
+  "repository": "https://github.com/jcapasix/angelopagani.git",
   "dependencies": {
     "express": "^4.17.1"
   }
